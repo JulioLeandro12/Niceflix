@@ -34,12 +34,12 @@
 <style>
     body {
         margin: 0%;
-        background-color: black;
+        background-color: #1C1C1C;
     }
     .navBar {
         background-color: black;
         width: 100%;
-        height: 100px;
+        height: 90px;
         text-align: center;
         display: flex;
         justify-content: center;
