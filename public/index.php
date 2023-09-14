@@ -1,8 +1,3 @@
-<?php 
-    $var1 = "Gêneros";
-    $var2 = "Series";
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,22 +8,30 @@
 
 <body>
     <div class="navBar"> 
-        <img src="../image/Niceflix logo.png" alt="niceflix.png" style="width: 100px; height: 50px;">
+    
+            
+        <img src="../image/Niceflix logo.png" alt="niceflix.png" style="width: 115px; height: 58px; margin-left: 60px;">
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Buscar...">
+            <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+
     </div>
 
-    <div>
-    <h2 class="navBarGenero">
-         <?= $var1 ?> </h2>
+    <div class="navBarGenero">
+        <h2>
+         <img src="../image/Genero.png" alt="Genero.png" style="width: 80px; height: 25px"> </h2>
     </div>
     
     <div class="navBarSeries">
-        <h2> <?= $var2 ?></h2>    
+       <h2> <img src="../image/series.png" alt="series.pnh" style="width: 80px; height: 25px"> </h2>     
     </div>
 
 </body>
 
 
 <script>
+
 </script>
 
 <style>
@@ -37,31 +40,62 @@
         background-color: #1C1C1C;
     }
     .navBar {
+
         background-color: black;
         width: 100%;
         height: 90px;
-        text-align: center;
+        text-align: left;
         display: flex;
-        justify-content: center;
+        justify-content: left;
         align-items: center;
     }
+
     .navBarGenero {
         background-color: black;
         width: 100%;
         height: 20%;
     }
+
     .navBarSeries {
         background-color: black;
         width: 100%;
         height: 20%;
     }
 
-    h2 {
-        color: red;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 25px;
-        text-shadow: 3px 3px 3px black;
-        }
+    /* Estilo para a barra de pesquisa */
+    .search-container {
+        margin-left: 480px;
+        display: flex;
+        background-color: #333;
+        padding: 5px, 2px;
+        border-radius: 5px;
+    }
+
+    /* Estilo para o campo de entrada de texto */
+    #search {
+        width: 400px;
+        flex-grow: 1;
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+        color: white;
+        outline: none;
+    }
+
+    /* Estilo para o botão de pesquisa */
+    #search-button {
+        background-color: #C20F08; /* Cor vermelha da Netflix */
+        border: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    /* Estilo para o ícone de pesquisa dentro do botão */
+    #search-button i {
+        color: white;
+    }
+
 </style>
 
 </html>
