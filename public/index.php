@@ -8,12 +8,22 @@
 
 <body>
     <div class="navBar"> 
-    
-            
         <img src="../image/Niceflix logo.png" alt="niceflix.png" style="width: 115px; height: 58px; margin-left: 60px;">
         <div class="search-container">
             <input type="text" id="search" placeholder="Buscar...">
             <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div id="menu-toggle">
+            <ul>
+                <li><a href="#">Item de Menu 1</a></li>
+                <li><a href="#">Item de Menu 2</a></li>
+                <li><a href="#">Item de Menu 3</a></li>
+            </ul>
         </div>
 
     </div>
@@ -32,15 +42,17 @@
 
 <script>
 
+
+
+
 </script>
 
 <style>
     body {
         margin: 0%;
-        background-color: #1C1C1C;
+        background-color: black;
     }
     .navBar {
-
         background-color: black;
         width: 100%;
         height: 90px;
@@ -50,16 +62,51 @@
         align-items: center;
     }
 
+    .toggle {
+        width: 30px; /* Ajuste o tamanho conforme necessário */
+        height: 20px;
+        cursor: pointer;
+        position: fixed;
+        align-items: center;
+        margin-left: 15px;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px; /* Ajuste a espessura da barra conforme necessário */
+        background-color: #333; /* Cor das barras */
+        margin: 5px 0;
+        transition: 0.4s; /* Animação das barras */
+        align-items: center;
+        border-radius: 3px;
+    }
+
+        /* Animação do ícone hamburger quando clicado */
+    .toggle.active .bar:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .toggle.active .bar:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+
     .navBarGenero {
         background-color: black;
         width: 100%;
         height: 20%;
+        margin-left: 20px;
     }
 
     .navBarSeries {
         background-color: black;
         width: 100%;
         height: 20%;
+        margin-left: 20px;
     }
 
     /* Estilo para a barra de pesquisa */
@@ -95,6 +142,7 @@
     #search-button i {
         color: white;
     }
+
 
 </style>
 
