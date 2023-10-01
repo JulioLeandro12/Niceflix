@@ -3,46 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>NiceFlix</title>
 </head>
 
 <body>
-    <div class="navBar"> 
+    <div class="navBar">
+        <i id="burguer" class="material-icons">menu</i>
         <img src="../image/Niceflix logo.png" alt="niceflix.png" style="width: 115px; height: 58px; margin-left: 60px;">
         <div class="search-container">
             <input type="text" id="search" placeholder="Buscar...">
             <button type="submit" id="search-button"><i class="fas fa-search"></i></button>
         </div>
-        <div class="toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-        </div>
-        <div id="menu-toggle">
-            <ul>
-                <li><a href="#">Item de Menu 1</a></li>
-                <li><a href="#">Item de Menu 2</a></li>
-                <li><a href="#">Item de Menu 3</a></li>
-            </ul>
-        </div>
 
     </div>
 
     <div class="navBarGenero">
-        <h2>
-         <img src="../image/Genero.png" alt="Genero.png" style="width: 80px; height: 25px"> </h2>
+        <h2> <img src="../image/Genero.png" alt="Genero.png" style="width: 80px; height: 25px"> </h2>
+        <div id="generos">
+            
+        </div>
+        <br>
     </div>
     
     <div class="navBarSeries">
-       <h2> <img src="../image/series.png" alt="series.pnh" style="width: 80px; height: 25px"> </h2>     
+       <h2> <img src="../image/series.png" alt="series.pnh" style="width: 80px; height: 25px"> </h2>
+        <div id="series">
+            <img src="../image/films/gatinho teste.jpeg" alt="filme gatinho">
+        </div>  
     </div>
 
 </body>
 
 
 <script>
-
-
 
 
 </script>
@@ -62,38 +56,21 @@
         align-items: center;
     }
 
-    .toggle {
-        width: 30px; /* Ajuste o tamanho conforme necessário */
-        height: 20px;
-        cursor: pointer;
-        position: fixed;
-        align-items: center;
+    i#burguer {
+        background-color: black;
+        display: block;
+        color: #333;
         margin-left: 15px;
+        cursor: pointer;
     }
 
-    .bar {
-        width: 100%;
-        height: 3px; /* Ajuste a espessura da barra conforme necessário */
-        background-color: #333; /* Cor das barras */
-        margin: 5px 0;
-        transition: 0.4s; /* Animação das barras */
-        align-items: center;
-        border-radius: 3px;
+    .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
     }
-
-        /* Animação do ícone hamburger quando clicado */
-    .toggle.active .bar:nth-child(1) {
-        transform: translateY(6px) rotate(45deg);
-    }
-
-    .toggle.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .toggle.active .bar:nth-child(3) {
-        transform: translateY(-6px) rotate(-45deg);
-    }
-
 
     .navBarGenero {
         background-color: black;
@@ -108,6 +85,18 @@
         height: 20%;
         margin-left: 20px;
     }
+
+    .generos {
+        
+    }
+
+    .series {
+        width: 10px;
+        height: 20px;
+        margin-left: 20px;
+        position: absolute;
+    }
+
 
     /* Estilo para a barra de pesquisa */
     .search-container {
