@@ -26,11 +26,16 @@
         <br>
     </div>
     
-    <div class="navBarSeries">
-       <h2> <img src="../image/series.png" alt="series.pnh" style="width: 80px; height: 25px"> </h2>
-        <div id="series">
-            <img src="../image/films/gatinho teste.jpeg" alt="filme gatinho">
-        </div>  
+    <div>
+        <div class="navBarSeries">
+        <h2> <img src="../image/series.png" alt="series.pnh" style="width: 80px; height: 25px"> </h2>
+        </div>
+    </div>
+    <div id="series" style="margin-left: 20px;">
+            <img src="../image/films/gatinho teste.jpeg" alt="filme gatinho" style="width: 100px; height: 140px; cursor: pointer">
+            <img src="../image/films/anime com cerveja.jpg" alt="filme2" style="margin-left: 10px; width: 100px; height: 140px; cursor: pointer;">
+            <img src="../image/films/filme011.jpg" alt="filme3" style="margin-left: 10px; width: 100px; height: 140px; cursor: pointer;">
+            <img src="../image/" alt="">
     </div>
 
 </body>
@@ -122,13 +127,13 @@
     #search-button {
         background-color: #C20F08; /* Cor vermelha da Netflix */
         border: none;
-        padding: 5px 10px;
+        padding: 5px 15px;
         border-radius: 5px;
         cursor: pointer;
     }
 
     /* Estilo para o ícone de pesquisa dentro do botão */
-    #search-button i {
+    i#search-button {
         color: white;
     }
 
