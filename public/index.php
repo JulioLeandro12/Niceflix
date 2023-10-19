@@ -20,10 +20,12 @@
     </div>
 
 <div class="primeira-entrada" style="background-image: url(../image/Wallpaper-confia.png); width: 100%; height: 100%;" >
-    
-    <div style="background-color:black;">    
+                           
+                            <!-- Isso é só teste, calma -->    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="barra-preta">
             <!-- Grupo de filmes -->
-            <div style="background-color: black;">
+            <div style="background-color: transparent;">
                 <div class="navBarFilmes">
                     <h2> Filmes mais procurados </h2>
                 </div>
@@ -36,7 +38,7 @@
             </div>    
             
             <!-- Grupo de series -->
-            <div style="background-color: black">
+            <div style="background-color: transparent">
                 <div class="navBarSeries">
                     <h2> Series recomendadas </h2>
                 </div>
