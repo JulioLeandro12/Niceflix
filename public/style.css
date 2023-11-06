@@ -16,109 +16,140 @@ body {
 .primeira-entrada {
     overflow: hidden;
     position: relative;
-
     background-size: cover;
     background-repeat: no-repeat; 
+}
+
+#logoSerieDestaque {
+    width: 30%;
+    height: 700px;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)); /* Cria um degradê preto da esquerda para a direita */
+    border-radius: 10%;
+}
+
+#assistirBotao {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 240px;
+    margin-top: 6%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: azure;
+    background-color: #C20F08;
+    transition: background-color 0.3s;
+    border-radius: 10px;
+    font-size: 100%;
+    cursor: pointer;
+}
+#assistirBotao:hover {
+    background-color: red;
+    transform: scale(1.2); /* Amplia a imagem 20% ao passar o mouse sobre ela */
+    z-index: 1; /* Coloca a imagem na frente de outros elementos, se necessário */
+    transition: transform 0.3s;
+}
+#assistirBotao:active {
+    background-color: #8B0000;
 }
 
 .barra-preta {
     background-color: rgba(0, 0, 0, 0.735);
 }
 
+i#burguer {
+    width: 20px;
+    height: 17px;
+    background-color: black;
+    display: block;
+    color: gray;
+    margin-left: 15px;
+    cursor: pointer;
+}
 
-    i#burguer {
-        width: 20px;
-        height: 17px;
-        background-color: black;
-        display: block;
-        color: gray;
-        margin-left: 15px;
-        cursor: pointer;
-    }
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
 
-    .material-symbols-outlined {
-        font-variation-settings:
-        'FILL' 0,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24
-    }
+.navBarFilmes {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: azure;
+    width: 100%;
+    height: 20%;
+    margin-left: 20px;
+    user-select: none;
+}
 
-    .navBarFilmes {
-        background-color: transparent;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 100%;
-        color: azure;
-        width: 100%;
-        height: 20%;
-        margin-left: 20px;
-        user-select: none;
-    }
+.navBarSeries {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    color: azure;
+    width: 100%;
+    height: 20%;
+    margin-left: 20px;
+    user-select: none;
+}
 
-    .navBarSeries {
-        background-color: transparent;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 100%;
-        color: azure;
-        width: 100%;
-        height: 20%;
-        margin-left: 20px;
-        user-select: none;
-    }
+.series {
+    width: 40px;
+    height: 50px;
+    margin-left: 20px;
+    position: relative;
+    overflow: hidden;
+}
 
-    .series {
-        width: 40px;
-        height: 50px;
-        margin-left: 20px;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .seriesHover:hover {
-        transform: scale(1.2); /* Amplia a imagem 20% ao passar o mouse sobre ela */
-        z-index: 1; /* Coloca a imagem na frente de outros elementos, se necessário */
-        transition: transform 0.3s;
-    }
+.seriesHover:hover {
+    transform: scale(1.2); /* Amplia a imagem 20% ao passar o mouse sobre ela */
+    z-index: 1; /* Coloca a imagem na frente de outros elementos, se necessário */
+    transition: transform 0.3s;
+}
 
 
     /* Estilo para a barra de pesquisa */
-    .search-container {
-        margin-left: 480px;
-        display: flex;
-        background-color: #333;
-        padding: 5px, 2px;
-        border-radius: 5px;
-    }
+ .search-container {
+    margin-left: 480px;
+    display: flex;
+    background-color: #333;
+    padding: 5px, 2px;
+    border-radius: 5px;
+}
 
     /* Estilo para o campo de entrada de texto */
-    #search {
-        width: 400px;
-        flex-grow: 1;
-        padding: 5px;
-        border: none;
-        background-color: transparent;
-        color: white;
-        outline: none;
-    }
+#search {
+    width: 400px;
+    flex-grow: 1;
+    padding: 5px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    outline: none;
+}
 
     /* Estilo para o botão de pesquisa */
-    .search-button {
-        background-color: #C20F08; /* Cor vermelha da Netflix */
-        border: none;
-        padding: 5px 15px;
-        border-radius: 5px;
-        cursor: pointer;
-        border: 2px solid gray;
-        transition: background-color 0.3s
-    }
+.search-button {
+    background-color: #C20F08; /* Cor vermelha da Netflix */
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid gray;
+    transition: background-color 0.3s
+}
 
     /* hover do button search */
-    .search-button:hover{
-        background-color: red;
-    }
+.search-button:hover{
+    background-color: red;
+}
 
-    .search-button:active{
-        background-color: #8B0000;
-        box-shadow: #333;
-        size: 2px;
-    }
+.search-button:active{
+    background-color: #8B0000;
+    box-shadow: #333;
+    size: 2px;
+}

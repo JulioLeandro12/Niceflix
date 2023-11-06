@@ -21,8 +21,15 @@
 
 <div class="primeira-entrada" style="background-image: url(../image/Wallpaper-confia.png); width: 100%; height: 100%;" >
                            
-                            <!-- Isso é só teste, calma -->    
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   <div id="logoSerieDestaque">
+        <img src="../image/the_witcher_logo.png.png" alt="theWitcherLogo" style="display:flex; justify-content:center; align-items: center; margin-left:5%;">
+        <h3 style="text-align:center; color:azure; font-family: Arial, Helvetica, sans-serif; font-size:100%; user-select: none;">
+            "The Witcher" é uma série de fantasia <br>
+            sobre um caçador de monstros chamado Geralt <br>
+             e suas aventuras em um mundo de magia e <br>
+             criaturas sobrenaturais.</h3>
+        <button id="assistirBotao">Assistir</button>
+   </div>
     <div class="barra-preta">
             <!-- Grupo de filmes -->
             <div style="background-color: transparent;">
